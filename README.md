@@ -1,6 +1,6 @@
 # 📚 **BookBridge** - Smart Book Marketplace
 
-[![GitHub Pages](https://img.shields.io/badge/Deploy-Live%https://yourusername.github.io/bookbridgehttps://img.shields.io/badge/Tech-HTML5%20![Responsive](https://img.shields.io/badge/Responsive-Mobile***
+
 
 ## ✨ **What is BookBridge?**
 
