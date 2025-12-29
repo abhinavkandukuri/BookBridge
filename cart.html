@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - BookBridge</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cart-container { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin: 2rem 0; }
+        .cart-item { display: flex; gap: 1rem; padding: 1rem; background: white; border-radius: 15px; margin-bottom: 1rem; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .cart-item img { width: 80px; height: 100px; object-fit: cover; border-radius: 10px; }
+        .quantity { display: flex; gap: 0.5rem; align-items: center; }
+        .quantity input[type="radio"] { display: none; }
+        .quantity label { padding: 5px 10px; border: 2px solid #ddd; border-radius: 20px; cursor: pointer; }
+        .quantity input[type="radio"]:checked + label { background: #667eea; color: white; border-color: #667eea; }
+        .totals { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); position: sticky; top: 100px; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">📚 BookBridge</a>
+            <ul class="nav-links">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Continue Shopping</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="color: white; margin-bottom: 2rem;">🛒 Shopping Cart</h1>
+        <div class="cart-container">
+            <div>
+                <div class="cart-item">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&w=100&q=80" alt="Clean Code">
+                    <div style="flex: 1;">
+                        <h3>Clean Code (Used)</h3>
+                        <div style="display: flex; gap: 1rem; margin: 0.5rem 0;">
+                            <span class="price-tag used">₹350</span>
+                        </div>
+                        <div class="quantity">
+                            <input type="radio" id="q1-1" name="q1" checked><label for="q1-1">1</label>
+                            <input type="radio" id="q1-2" name="q1"><label for="q1-2">2</label>
+                            <input type="radio" id="q1-3" name="q1"><label for="q1-3">3</label>
+                        </div>
+                    </div>
+                    <a href="index.html" class="btn btn-secondary">Remove</a>
+                </div>
+            </div>
+            <div class="totals">
+                <h3>Order Summary</h3>
+                <div style="margin: 1rem 0;">
+                    <p>Subtotal: <strong>₹1,399</strong></p>
+                    <p>Shipping: ₹49</p>
+                    <p>Commission (2%): ₹28</p>
+                    <hr>
+                    <p style="font-size: 1.5rem; color: #28a745;"><strong>Total: ₹1,476</strong></p>
+                </div>
+                <a href="checkout.html" class="btn btn-primary" style="width: 100%; padding: 15px;">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+    <footer><div class="container"><p>&copy; 2025 BookBridge</p></div></footer>
+</body>
+</html>

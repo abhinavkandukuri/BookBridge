@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBridge - Smart Book Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+    <nav class="container">
+        <a href="index.html" class="logo">📚 BookBridge</a>
+        <ul class="nav-links">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sell-books.html">📤 Sell Books</a></li>
+            <li><a href="cart.html" class="cart-badge">Cart <span class="cart-count">3</span></a></li>
+        </ul>
+    </nav>
+</header>
+    <section class="hero">
+        <div class="container">
+            <h1>Smart Book Marketplace</h1>
+            <p>Compare new prices from Amazon & Flipkart with affordable second-hand books from local sellers. Save up to 70% instantly!</p>
+            <a href="#search" class="cta-btn">🔍 Find Books Now</a>
+        </div>
+    </section>
+
+    <section class="search-section" id="search">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">Search by ISBN, Title or Author</h2>
+            <form class="search-box">
+                <input type="text" class="search-input" placeholder="Enter book title, ISBN or author..." required>
+                <button type="submit" class="search-btn">Search Books</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem; color: white;">📖 Featured Deals (BTech Essentials)</h2>
+        <div class="books-grid">
+            <!-- Clean Code -->
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/41-G7mS1PZL._SX331_BO1,204,203,200_.jpg" alt="Clean Code" class="book-image">
+                <div class="book-info">
+                    <h3 class="book-title">Clean Code</h3>
+                    <p class="book-author">Robert C. Martin</p>
+                    <div class="price-comparison">
+                        <span class="price-tag amazon">Amazon ₹799</span>
+                        <span class="price-tag flipkart">Flipkart ₹749</span>
+                        <span class="price-tag used best-deal">Used ₹350 ⭐</span>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="cart.html" class="btn btn-primary">🛒 Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python Crash Course -->
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/81NWt5Y8-zL._AC_UL320_.jpg" alt="Python Crash Course" class="book-image">
+                <div class="book-info">
+                    <h3 class="book-title">Python Crash Course</h3>
+                    <p class="book-author">Eric Matthes</p>
+                    <div class="price-comparison">
+                        <span class="price-tag amazon">Amazon ₹899</span>
+                        <span class="price-tag flipkart best-deal">Flipkart ₹829</span>
+                        <span class="price-tag used">Used ₹450</span>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="cart.html" class="btn btn-primary">🛒 Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">Buy on Flipkart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Designing Data-Intensive Applications -->
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/91T4I2s7tNL._AC_UL320_.jpg" alt="Designing Data-Intensive Applications" class="book-image">
+                <div class="book-info">
+                    <h3 class="book-title">Designing Data-Intensive Apps</h3>
+                    <p class="book-author">Martin Kleppmann</p>
+                    <div class="price-comparison">
+                        <span class="price-tag amazon">Amazon ₹1299</span>
+                        <span class="price-tag flipkart">Flipkart ₹1199</span>
+                        <span class="price-tag used">Used ₹650 ⭐</span>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="cart.html" class="btn btn-primary">🛒 Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cracking the Coding Interview -->
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/71-eyaAuoeL._AC_UL320_.jpg" alt="Cracking the Coding Interview" class="book-image">
+                <div class="book-info">
+                    <h3 class="book-title">Cracking the Coding Interview</h3>
+                    <p class="book-author">Gayle Laakmann McDowell</p>
+                    <div class="price-comparison">
+                        <span class="price-tag amazon">Amazon ₹999</span>
+                        <span class="price-tag flipkart">Flipkart ₹949</span>
+                        <span class="price-tag used best-deal">Used ₹400 ⭐⭐</span>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="cart.html" class="btn btn-primary">🛒 Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grokking Algorithms -->
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/81AgGLpAxkL._AC_UL320_.jpg" alt="Grokking Algorithms" class="book-image">
+                <div class="book-info">
+                    <h3 class="book-title">Grokking Algorithms</h3>
+                    <p class="book-author">Aditya Bhargava</p>
+                    <div class="price-comparison">
+                        <span class="price-tag amazon">Amazon ₹699</span>
+                        <span class="price-tag flipkart best-deal">Flipkart ₹649</span>
+                        <span class="price-tag used">Used ₹300</span>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="cart.html" class="btn btn-primary">🛒 Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">Buy on Flipkart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Head First Design Patterns -->
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/81oua-EndML._AC_UL320_.jpg" alt="Head First Design Patterns" class="book-image">
+                <div class="book-info">
+                    <h3 class="book-title">Head First Design Patterns</h3>
+                    <p class="book-author">Kathy Sierra, Bert Bates</p>
+                    <div class="price-comparison">
+                        <span class="price-tag amazon">Amazon ₹1499</span>
+                        <span class="price-tag flipkart">Flipkart ₹1399</span>
+                        <span class="price-tag used">Used ₹750 ⭐</span>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="cart.html" class="btn btn-primary">🛒 Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AWS Certified Solutions Architect -->
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/81iAADNy2+L._AC_UL320_.jpg" alt="AWS Certified Solutions Architect" class="book-image">
+                <div class="book-info">
+                    <h3 class="book-title">AWS Certified Solutions Architect</h3>
+                    <p class="book-author">Sybex Official Study Guide</p>
+                    <div class="price-comparison">
+                        <span class="price-tag amazon best-deal">Amazon ₹1199</span>
+                        <span class="price-tag flipkart">Flipkart ₹1299</span>
+                        <span class="price-tag used">Used ₹600</span>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="cart.html" class="btn btn-primary">🛒 Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Pragmatic Programmer -->
+            <div class="book-card">
+                <img src="https://m.media-amazon.com/images/I/91u1S5H8FNL._AC_UL320_.jpg" alt="The Pragmatic Programmer" class="book-image">
+                <div class="book-info">
+                    <h3 class="book-title">The Pragmatic Programmer</h3>
+                    <p class="book-author">David Thomas, Andrew Hunt</p>
+                    <div class="price-comparison">
+                        <span class="price-tag amazon">Amazon ₹999</span>
+                        <span class="price-tag flipkart">Flipkart ₹949</span>
+                        <span class="price-tag used best-deal">Used ₹450 ⭐⭐</span>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="cart.html" class="btn btn-primary">🛒 Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">Contact Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer><div class="container"><p>&copy; 2025 BookBridge. Buy smart, save big, read more! 🌟</p></div></footer>
+</body>
+</html>
